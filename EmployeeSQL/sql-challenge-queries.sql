@@ -26,8 +26,13 @@ FROM Dept_manager AS dm
 		
 --List the department number for each employee along with that employee’s employee 
 --number, last name, first name, and department name.
-SELECT dept_no, emp_no, last_name, first_name, dept_name
-FROM
+SELECT de.dept_no, de.emp_no, e.last_name, e.first_name, d.dept_name
+FROM Dept_emp AS de
+	JOIN Departments AS d
+	ON (de.dept_no = d.dept_no)
+		JOIN Employees AS e
+		ON (de.emp_no = e.emp_no)
+		GROUP BY de.dept_no, de.emp_no, e.last_name, e.first_name, d.dept_name;
 
 
 --List first name, last name, and sex of each employee whose first name is Hercules
