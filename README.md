@@ -1,1 +1,6 @@
 # sql-challenge
+
+  SQL-challenge is a research project for the fictional company Pewlett Hackard, analyzing data about people the company employed during the 1980s and 1990s using the six CSV files that remain from their employee database. Included in the repository is a folder named EmployeeSQL that contains a data folder with the CSV files, a PNG image of the ERD created before the database was assembled, and two SQL files containing the code for the creation of six tables and the queries used to analyze the data.
+
+An ERD was created to map the relationships between the six tables in order to facilitate the analysis of the data.  Tables were created for each of the six CSV files and the data was imported into the tables.  Queries were run to find information for all employees hired in 1986 and all employees whose first name was Hercules and whose last name started with the letter B.  Joins were made on tables to find employee number and salary for each employee, managers for each department, department numbers and employee numbers for each employee, the list of employees in the Sales department, and the combined list of employees in the Sales and Development departments.  The aggregating function COUNT was used to find the number of employees who shared each last name.
+
